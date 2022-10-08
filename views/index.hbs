@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link href="/assets/bootstrap/css/bootstrap.min.css" 
+    rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="container mt-5">
+    <p>Welcome to <h3 class="text-primary">{{title}}</h3></p>
+
+    <form action="/login" method="post" class="form-group">
+      <div class="col-sm-2">
+      <label>Username</label>
+      <input type="text" name="username" class="form-control">
+      </div>
+      <div class="col-sm-2">
+      <label>Password</label>
+      <input type="password" name="password" class="form-control">
+      </div>
+      <div class="col-sm-1">
+      <label></label>
+      <input type="submit" name="login" value="Login" class="form-control btn btn-primary">
+      </div>
+    </form>
+  </body>
+</html>
